@@ -68,8 +68,8 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-START_IMG = (environ.get('START_IMG', 'https://graph.org/file/5557c9a30c6bbf502d079-0e3858963cc8e5228d.jpg https://graph.org/file/f462c90368e5bc2070d26-4b54739588703c3e7c.jpg')).split()
-FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://graph.org/file/1568a00ee50767dd91ef1-b2caa3dc25d0afce80.jpg')
+START_IMG = (environ.get('START_IMG', 'https://graph.org/file/b333c1c5de83584a4b3db-6afafc0d57ceb795df.jpg https://graph.org/file/dd2229d34bf4cc0666436-b29f220c374044ad03.jpg')).split()
+FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://graph.org/file/2aaf2d1d73b69bb205e27-bc0558d02c7ef4eb96.jpg')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
 PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/29291e968ce9ef4aecd13-9dd0a2975186a9db57.jpg')).split()
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/9f3f47c690bbcc67633c2.jpg'))
@@ -83,7 +83,7 @@ IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
 PORT = environ.get('PORT', '5000')
 MAX_BTN = int(environ.get('MAX_BTN', '8'))
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
-DELETE_TIME = int(environ.get('DELETE_TIME', 180))
+DELETE_TIME = int(environ.get('DELETE_TIME', 240))
 IMDB = is_enabled('IMDB', False)
 FILE_CAPTION = environ.get('FILE_CAPTION', f'{script.FILE_CAPTION}')
 IMDB_TEMPLATE = environ.get('IMDB_TEMPLATE', f'{script.IMDB_TEMPLATE_TXT}')
