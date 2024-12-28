@@ -21,8 +21,8 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '7204215099:AAGpp58b-9yFQ1ATBRhH6jhk6-gOJ0r
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5972689430 6941618796').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/movie4sure https://t.me/ll_ur_heart_ll") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002352395258'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+oSZUPH8suJA5YThl')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002469281545').split()]
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+zkVCGsbgSH42ZDQ1')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002427711638').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://MovieTimeNew:sushhp@movietime.9nslw.mongodb.net/?retryWrites=true&w=majority&appName=movietime")
@@ -77,7 +77,7 @@ REACTIONS = ["🤑", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡", "�
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '180'))
+FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '240'))
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
 PORT = environ.get('PORT', '5000')
